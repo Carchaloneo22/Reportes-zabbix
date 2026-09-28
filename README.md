@@ -20,19 +20,12 @@ El módulo no se conecta directamente al equipo ni almacena credenciales: utiliz
 # Instalación
 
 1. Copiar `ReportesZabbix.zip` al servidor Zabbix.
-2. Descomprimirlo dentro del directorio de módulos del frontend.
-
-```bash
+ ```bash
 cd /usr/share/zabbix/ui/modules
-cp -a AdvancedAvailabilityReports AdvancedAvailabilityReports.backup-$(date +%Y%m%d-%H%M%S) 2>/dev/null || true
-unzip -o ReportesZabbix055.zip
-chown -R root:root AdvancedAvailabilityReports
-find AdvancedAvailabilityReports -type d -exec chmod 755 {} \;
-find AdvancedAvailabilityReports -type f -exec chmod 644 {} \;
-restorecon -RF AdvancedAvailabilityReports
-find AdvancedAvailabilityReports -name '*.php' -exec php -l {} \;
-systemctl restart php-fpm
-systemctl restart httpd
+```
+3. Descomprimirlo dentro del directorio de módulos del frontend.
+```bash
+unzip -o ReportesZabbix.zip
 ```
 
 3. Ingresar al frontend como Super Admin.
