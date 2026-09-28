@@ -35,8 +35,6 @@ unzip -o ReportesZabbix.zip
 7. Habilitar **Reportes de monitoreo y disponibilidad**.
 8. Abrir **Reportes → Disponibilidad avanzada**.
 
-No se requieren cambios ni credenciales adicionales de PostgreSQL o MySQL.
-
 ## Fuente de datos
 
 Esta versión usa exclusivamente la API interna de Zabbix. Por ello funciona de la misma forma con PostgreSQL, PostgreSQL + TimescaleDB, MySQL y MariaDB.
