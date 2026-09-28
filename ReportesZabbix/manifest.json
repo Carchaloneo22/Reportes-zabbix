@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2.0,
+  "id": "laka_advanced_availability_reports",
+  "name": "Reportes de monitoreo y disponibilidad",
+  "namespace": "AdvancedAvailabilityReports",
+  "version": "1.0",
+  "author": "LAKA Soluciones Tecnológicas",
+  "description": "Reportes tecnicos y gerenciales de monitoreo, disponibilidad y salud operativa para Zabbix 7.0 y 7.4.",
+  "url": "https://www.zabbix.com/documentation/7.4/en/devel/modules",
+  "actions": {
+    "availability.reports": {
+      "class": "ReportView",
+      "view": "availability.reports",
+      "layout": "layout.htmlpage"
+    },
+    "availability.reports.csv": {
+      "class": "ReportCsv",
+      "view": "availability.reports.csv",
+      "layout": null
+    },
+    "availability.host.detail": {
+      "class": "HostDetail",
+      "view": "availability.host.detail",
+      "layout": "layout.htmlpage"
+    }
+  },
+  "assets": {
+    "css": [
+      "availability-reports.css"
+    ],
+    "js": [
+      "availability-reports.js"
+    ]
+  }
+}
